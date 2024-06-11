@@ -4,7 +4,12 @@
 .navBarList {
   display: flex;
   justify-content: space-evenly;
-  width: 20%;
-  border: 1px solid;
+  width: 30%;
+  //border: 1px solid;
   list-style-type: none;
+  font-size: v.$fontMeduim;
+
+  li {
+    cursor: pointer;
+  }
 }

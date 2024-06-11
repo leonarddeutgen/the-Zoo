@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "./pages/Layout";
-import { Animal } from "./pages/Animal";
+import { AnimalsPage } from "./pages/AnimalsPage";
 
 export const router = createBrowserRouter([
   {
@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/animal",
-        element: <Animal></Animal>,
+        element: <AnimalsPage></AnimalsPage>,
       },
     ],
   },
