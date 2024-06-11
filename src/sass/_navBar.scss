@@ -1,0 +1,10 @@
+@use "variables" as v;
+@use "mixins";
+
+.navBarList {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  border: 1px solid;
+  list-style-type: none;
+}

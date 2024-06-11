@@ -1,0 +1,7 @@
+@use "variables" as v;
+@use "mixins";
+
+header {
+  width: 100%;
+  @include mixins.centerColumn;
+}
