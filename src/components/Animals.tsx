@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAnimals } from "../services/animalService";
 import { IAnimal } from "../models/IAnimal";
+import { Animal } from "./Animal";
 
 export const Animals = () => {
   const [data, setData] = useState<IAnimal[]>([]);
@@ -16,7 +17,11 @@ export const Animals = () => {
   console.log(data);
   return (
     <>
-      <article className="animalsContainer"></article>
+      <article className="animalsContainer">
+        {data.map((animal) => (
+          <Animal animal={animal} key={animal.id}></Animal>
+        ))}
+      </article>
     </>
   );
 };

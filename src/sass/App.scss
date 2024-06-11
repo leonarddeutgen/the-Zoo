@@ -2,6 +2,8 @@
 @use "mixins";
 @use "navBar";
 @use "homePage";
+@use "animals";
+@use "animal";
 
 body {
   @include mixins.reset;

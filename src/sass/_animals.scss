@@ -1,2 +1,15 @@
 @use "variables" as v;
 @use "mixins";
+
+.animalsContainer {
+  width: 90%;
+  height: 90%;
+  border: 1px solid;
+  overflow: scroll;
+  //padding: 0.5rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
