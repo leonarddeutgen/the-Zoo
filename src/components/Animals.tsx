@@ -14,7 +14,6 @@ export const Animals = () => {
     };
     getAllAnimals();
   });
-  console.log(data);
   return (
     <>
       <article className="animalsContainer">

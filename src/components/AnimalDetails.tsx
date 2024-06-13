@@ -7,7 +7,8 @@ interface IAnimalProps {
 export const AnimalDetails = ({ animal }: IAnimalProps) => {
   return (
     <>
-      <h1>{animal.latinName}</h1>
+      <h1>{animal.name}</h1>
+      <p>{animal.lastFed}</p>
     </>
   );
 };
