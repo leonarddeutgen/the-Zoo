@@ -6,7 +6,7 @@ export const NavBar = () => {
     <>
       <ul className="navBarList">
         <li onClick={() => navigate("/")}>Home</li>
-        <li onClick={() => navigate("/Animal")}>Animals</li>
+        <li onClick={() => navigate("/Animals")}>Animals</li>
       </ul>
     </>
   );

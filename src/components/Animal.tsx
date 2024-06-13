@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { IAnimal } from "../models/IAnimal";
 
 interface IAnimalProps {
@@ -5,9 +6,14 @@ interface IAnimalProps {
 }
 
 export const Animal = ({ animal }: IAnimalProps) => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="animalbox">
+      <div
+        className="animalbox"
+        onClick={() => navigate(`/animal/${animal.id}`)}
+      >
         <h3>{animal.name}</h3>
         <div className="imgContainer">
           <img className="imgContainer--img" src={animal.imageUrl} alt="" />
